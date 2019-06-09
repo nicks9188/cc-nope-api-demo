@@ -1,6 +1,10 @@
 pipeline{
     agent any
 
+    environment {
+        CI = 'true'
+    }
+
     stages {
         stage('Message') {
             steps {
@@ -10,7 +14,7 @@ pipeline{
         stage ('Disk Cleaning up') {
             steps {
                 echo "Running Disk Cleanup"
-                sh "DiskCleanup.sh"
+                sh "./DiskCleanup.sh"
             }
         }
     }
