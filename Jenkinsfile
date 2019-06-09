@@ -13,7 +13,7 @@ pipeline{
             }
         }
         stage('Cleanup workspace'){
-            deleteDir()
+            sh 'deleteDir()'
         }
     }
 }
