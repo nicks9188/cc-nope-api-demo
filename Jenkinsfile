@@ -4,12 +4,12 @@ pipeline{
     stages {
         stage ('---dev---') {
             steps {
-                npm install
+                sh 'npm install'
             }
         }
         stage ('---prod---') {
             steps {
-                node app.js
+                sh 'node app.js'
             }
         }
     }
