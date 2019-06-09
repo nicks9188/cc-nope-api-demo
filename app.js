@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 
 app.get("/", (req, res, next) => {
-    res.json(["Welcome to Chacha Chaudharyy !!! You're on Dev Brnach"]);
+    res.json(["Chacha Chaudharyy Welcomes You on => Dev Branch !!!"]);
 });
 
 app.listen(3000, () => {
