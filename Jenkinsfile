@@ -9,9 +9,7 @@ pipeline{
         }
         stage ('disk space alert') {
             steps {
-                def username = 'Jenkins'
-                echo "Hello .${username}"
-                echo "I said, Hello . ${username}" 
+                echo "Hello"
             }
         }
     }
