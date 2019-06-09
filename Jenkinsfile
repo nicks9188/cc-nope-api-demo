@@ -7,9 +7,10 @@ pipeline{
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
-        stage ('disk space alert') {
+        stage ('Disk Cleaning up') {
             steps {
-                echo "Hello ${username}"
+                echo "Running Disk Cleanup"
+                /*to add script file here*/
             }
         }
     }
