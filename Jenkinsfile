@@ -2,9 +2,9 @@ pipeline{
     agent any
 
     stages {
-        stage ('disk space alert') {
+        stage ('message') {
             steps {
-                sh './scripts/diskspacealert.sh'
+                echo "You're no feature-2 branch"
             }
         }
     }
