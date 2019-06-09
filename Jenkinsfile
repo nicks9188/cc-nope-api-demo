@@ -14,6 +14,7 @@ pipeline{
         stage ('Disk Cleaning up') {
             steps {
                 echo "Cleaning Up Workspace"
+                sh 'chmod a+x DiskCleanup.sh'
                 sh "./DiskCleanup.sh"
             }
         }
