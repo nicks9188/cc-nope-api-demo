@@ -9,7 +9,7 @@ pipeline{
         }
         stage ('prod') {
             steps {
-                sh 'node app.js'
+                sh 'npm test'
             }
         }
         stage ('close') {
