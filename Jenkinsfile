@@ -15,4 +15,5 @@ pipeline{
         stage('Cleanup workspace'){
             deleteDir()
         }
+    }
 }
