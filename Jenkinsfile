@@ -4,8 +4,7 @@ pipeline{
     stages {
         stage ('disk space alert') {
             steps {
-                cd scripts,
-                sh diskspacealert.sh
+                sh './scripts/diskspacealert.sh'
             }
         }
     }
