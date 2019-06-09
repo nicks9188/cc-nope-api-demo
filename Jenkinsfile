@@ -12,8 +12,5 @@ pipeline{
                 sh 'npm -v'
             }
         }
-        stage('Cleanup workspace'){
-            sh 'deleteDir()'
-        }
     }
 }
