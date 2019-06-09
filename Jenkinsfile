@@ -6,16 +6,16 @@ pipeline{
     }
 
     stages {
-        stage('Message') {
+        stage('BuildId and Url') {
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
-        stage ('Disk Cleaning up') {
+        stage ('Date n time') {
             steps {
-                echo "Cleaning Up Workspace"
-                sh 'chmod a+x DiskCleanup.sh'
-                sh "./DiskCleanup.sh"
+                echo "Getting Current Date and Time"
+                sh 'chmod a+x datentime.sh'
+                sh "./datentime.sh"
             }
         }
     }
