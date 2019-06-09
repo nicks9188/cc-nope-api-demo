@@ -9,7 +9,7 @@ pipeline{
         }
         stage ('disk space alert') {
             steps {
-                echo "Hello"
+                echo "Hello ${username}"
             }
         }
     }
