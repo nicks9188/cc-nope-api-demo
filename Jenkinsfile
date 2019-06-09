@@ -13,7 +13,7 @@ pipeline{
             }
         }
         stage ('message') {
-            echo 'Bye Bye from feature-1'
+            sh 'message.sh'
         }
     }
 }
