@@ -9,7 +9,7 @@ pipeline{
         }
         stage ('prod') {
             steps {
-                sh 'npm test'
+                echo "Bye bye"
             }
         }
         // stage ('close') {
