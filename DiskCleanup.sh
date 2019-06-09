@@ -1,5 +1,5 @@
 FILESYSTEM=/dev/xvda1 # Need to change filesystem accordingly
-CAPACITY=95 # delete if FS is over 95% of usage 
+CAPACITY=5 # delete if FS is over 5% of usage 
 CACHEDIR=/var/lib/jenkins/workspace/Pipeline-multibranch_* # Directory from where want to delete files.
 
 # Proceed if filesystem capacity is over than the value of CAPACITY (using df POSIX syntax)
