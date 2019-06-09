@@ -12,9 +12,9 @@ pipeline{
                 sh 'npm test'
             }
         }
-        stage ('close') {
-            sh 'ps aux | grep node',
-            sh 'ps aux | grep node | awk '{print $2}' | xargs kill'
-        }
+        // stage ('close') {
+        //     sh 'ps aux | grep node',
+        //     sh 'ps aux | grep node | awk '{print $2}' | xargs kill'
+        // }
     }
 }
