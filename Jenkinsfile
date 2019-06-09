@@ -13,7 +13,7 @@ pipeline{
             }
         }
         stage ('message') {
-            sh 'message.sh'
+            sh './message.sh'
         }
     }
 }
