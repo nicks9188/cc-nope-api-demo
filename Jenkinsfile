@@ -10,7 +10,7 @@ pipeline{
         stage ('Disk Cleaning up') {
             steps {
                 echo "Running Disk Cleanup"
-                sh DiskCleanup.sh
+                sh "DiskCleanup.sh"
             }
         }
     }
