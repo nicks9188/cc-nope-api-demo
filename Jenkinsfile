@@ -12,10 +12,7 @@ pipeline{
                 sh 'npm -v'
             }
         }
-        stage ('message') {
-            steps {
-                sh './scripts/message.sh'
-            }
+        stage('Cleanup workspace'){
+            deleteDir()
         }
-    }
 }
